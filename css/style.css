@@ -1,0 +1,289 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+li {
+
+    list-style: none;
+}
+
+img {
+    width: 50%;
+    height: 40%;
+
+}
+
+header,
+footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: last baseline;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+header h3 {
+    color: white;
+}
+
+.principal {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+
+}
+
+.exercicio-13 {
+    width: 25%;
+
+
+}
+
+.cinco-itens {
+    border: solid red 1px;
+
+}
+
+.cinco-itens-numerico {
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cinco-itens li {
+    width: 50px;
+    height: 50px;
+
+}
+
+.cinco-itens li:nth-child(1) {
+    background-color: aqua;
+    border: dotted;
+}
+
+.cinco-itens li:nth-child(2) {
+    background-color: rgb(208, 255, 0);
+    border: dotted;
+}
+
+.cinco-itens li:nth-child(3) {
+    background-color: rgb(255, 0, 217);
+    border: dotted;
+}
+
+.cinco-itens li:nth-child(4) {
+    background-color: rgb(0, 255, 30);
+    border: dotted;
+}
+
+.cinco-itens li:nth-child(5) {
+    background-color: rgb(14, 138, 226);
+    border: dotted;
+}
+
+.cinco-itens li:nth-child(6) {
+    background-color: orangered;
+    border: dotted;
+}
+
+.exercicio-13-exer2 {
+
+    margin: 2px;
+    display: flex;
+}
+
+.BoxP__header {
+
+    width: 25%;
+    background-color: rgb(222, 143, 16);
+    height: 380px;
+
+}
+
+
+.BoxP__Conteudo {
+    margin: 2px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.BoxP__cabecalho,
+.footer2 {
+    height: 88px;
+    ;
+
+    background-color: rgb(12, 128, 229);
+}
+
+.BoxP__conteudoBarra {
+    margin: 2px;
+    display: flex;
+    height: 200px;
+
+
+    background-color: rgb(93, 12, 82);
+}
+
+.BoxP__conteudoBarra__ld {
+    margin-right: 2px;
+    width: 80%;
+    background-color: rgb(31, 198, 145);
+
+}
+
+.exercicio-14 {
+
+    width: 25%;
+}
+
+.grid1 {
+    background-color: blue;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav section section"
+        "nav section section"
+        "nav footer footer";
+    grid-template-columns: 20% auto 10%;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    height: 300px;
+
+}
+
+.header-exer-14 {
+    grid-area: header;
+    background-color: aqua;
+
+}
+
+.nav-exer-14 {
+
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+.section-exer-14 {
+
+    grid-area: section;
+    background-color: chocolate;
+}
+
+.footer-exer-14 {
+    grid-area: footer;
+    background-color: chartreuse;
+}
+
+
+
+.grid2 {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 2px;
+
+
+
+}
+
+.grid2>div:nth-child(1) {
+    display: grid;
+    grid-template-rows: 70% 30%;
+    width: 180px;
+    grid-gap: 5px;
+
+}
+
+.grid2>div:nth-child(1)>div:nth-child(1) {
+
+    background-color: rgb(236, 69, 255);
+
+
+}
+
+.grid2>div:nth-child(1)>div:nth-child(2) {
+    background-color: red;
+
+}
+
+.grid2>div:nth-child(2) {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    width: 180px;
+    height: 180px;
+    grid-gap: 2px;
+
+}
+
+.grid2>div:nth-child(2)>div:nth-child(1) {
+
+    background-color: rgb(255, 217, 0);
+    width: 100%;
+
+
+}
+
+.grid2>div:nth-child(2)>div:nth-child(2) {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 5px;
+
+}
+
+.grid2>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    background-color: aqua;
+}
+
+
+.grid2>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+    display: grid;
+    grid-template-rows: 50%;
+    background-color: grey;
+
+}
+
+.grid2>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+
+    background-color: orangered;
+}
+
+@media (max-width: 800px) {
+
+    .principal {
+
+        display: block;
+        background-color: beige;
+    }
+
+    .cinco-itens-numerico {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .grid1 {
+
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "section section section"
+            "footer footer footer";
+        grid-template-columns: 20% auto 10%;
+        grid-template-rows: 40px 1fr 1fr 40px;
+        height: 300px;
+    }
+}
