@@ -2,7 +2,7 @@ main{
 
 display:flex;
 justify-content: space-around;
-
+}
 #btnJogar{
 
     width: 100px;
@@ -41,5 +41,4 @@ gap: 20px;
 
         width: 150px;
     height: 190px;
-}
 }
