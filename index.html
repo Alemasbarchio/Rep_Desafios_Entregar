@@ -4,129 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Desafio Aula16</title>
+    <title>Exercicio Consumir API</title>
+    <link rel="stylesheet" href="/ExerConsumirAPI/css/stylesApi.css">
 
 </head>
 
 <body>
-    <header>
-        <img src="" alt="imgLogo">
-        <h3> WorkShop HTML + CSS + responsividade  </h3>
-
-    </header>
-
-    <main class="principal">
-        <section class="exercicio-13">
-            <h1>Exercicio Aula 13 flex box</h1>
-
-            <div class="cinco-itens">
-                <ul class="cinco-itens-numerico">
-                    <li>1 </li>
-                    <li>2 </li>
-                    <li>3 </li>
-                    <li>4 </li>
-                    <li>5 </li>
-                    <li>6 </li>
-                </ul>
+    <main>
+        <div class="principal">
+            <h1> Exercicio consumir API</h1>
+            <h2> jogo 21</h2>
+            <div id="cards-sc">
+                <img src="./ExerConsumirAPI/baralho.png" alt="imgLogo">
 
             </div>
-
-            <h1>Exercicio aula 13 flex box</h1>
-            <section class="exercicio-13-exer2">
-
-                <header class="BoxP__header">
-
-                    <h1> Navegação</h1>
-                </header>
-
-
-                <div class="BoxP__Conteudo">
-                    <div class="BoxP__cabecalho">
-                        <h1>Cabeçalho</h1>
-                    </div>
-
-                    <div class="BoxP__conteudoBarra">
-                        <div class="BoxP__conteudoBarra__ld">
-                            <h1>Conteúdo </h1>
-                        </div>
-                        <div class="BoxP__conteudoBarra__le">
-                            <h1>Barra Lateral </h1>
-                        </div>
-                    </div>
-                    <footer class="footer2">
-                        <h1> Footer</h1>
-                    </footer>
-                </div>
-
-            </section>
-
-        </section>
-
-        <section class="exercicio-14">
-
-            <h1>Exercicios aula 14 grid</h1>
-
-            <div class="grid1">
-                <header class="header-exer-14">
-                    <h1>header </h1>
-                </header>
-                <nav class="nav-exer-14">
-                    <h1>Nav</h1>
-                </nav>
-
-                <section class="section-exer-14">
-                    <h1>conteudo</h1>
-                </section>
-                <footer class="footer-exer-14">
-                    <h1>Footer</h1>
-
-                </footer>
-
+            <button id="btnJogar">Pedir Carta </button>
+            <div class="card-points">
+                <h3> A Pontuação é : </h3>
+                <span id="view-points"> </span>
             </div>
-            <h1> Exercicio aula 14 grid</h1>
-
-            <div class="grid2">
-
-                <div>
-                    <div>
-                        pink
-
-                    </div>
-                    <div>
-                        vermelho
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <div>
-                        amarelo
-
-                    </div>
-                    <div>
-
-                        <div>
-                            aqua
-                        </div>
-                        <div>
-                            <div>
-                                cinza
-                            </div>
-                            <div>
-                                branca
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
+    <script src="./ExerConsumirAPI/Scripts/consumirApi.js"></script>
 </body>
 
 </html>
