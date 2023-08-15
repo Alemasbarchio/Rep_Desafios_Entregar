@@ -23,16 +23,22 @@ btnListar.onclick = () => {
     .then((res) => res.json())
     .then((data) => {
       const cardDetails = (data.cards[0]);
-      const imgElemento = document.createElement("img");
+       const imgElemento = document.createElement("img");
       imgElemento.src = cardDetails.image;
       cards_Sc.appendChild(imgElemento);
       imgElemento.image = + cardDetails.image;
-      console.log(imgElemento);
+      
 
+       
       if (cardDetails.value === "KING" || cardDetails.value === "QUEEN" || cardDetails.value === "JACK") {
         somaTotalCards += 10;
 
       }
+       else if(cardDetails.value === "ACE"){
+        somaTotalCards += 1;
+       }
+
+      
       else {
         somaTotalCards += parseInt(cardDetails.value);
 
@@ -40,7 +46,8 @@ btnListar.onclick = () => {
       viewPoints.textContent = somaTotalCards;
 
       if (somaTotalCards == 21) {
-        viewPoints = somaTotalCards + "Você ganhou"
+        viewPoints.textContent = somaTotalCards + " Você Ganhou"
+        btnListar.style.display = "none";
 
       }
 
